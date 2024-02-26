@@ -8,7 +8,7 @@ class Control:
         
         self._tv = tv
         
-        self.tv.setControl (self)
+        self._tv.setControl (self)
         
     def setTv (self, tv):
         

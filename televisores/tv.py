@@ -1,8 +1,8 @@
 class TV:
-    
+        
     _numTV = 0
     
-    def _init_ (self, marca, estado):
+    def __init__ (self, marca, estado):
         
         self._marca = marca
         self._canal = 1
@@ -83,4 +83,24 @@ class TV:
         if self._estado and self._canal < 120:
             
             self._canal += 1
+            
+    def canalDown(self):
+        
+        if self._estado and self._canal > 1:
+            
+            self._canal -= 1
+            
+    def volumenUp(self):
+        
+        if self._estado and self._volumen < 7:
+            
+            self._volumen += 1
+            
+    def volumenDown(self):
+        
+        if self._estado and self._volumen > 1:
+            
+            self._volumen -= 1
+            
+    
         
